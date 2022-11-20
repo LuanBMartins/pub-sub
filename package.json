@@ -1,0 +1,23 @@
+{
+  "name": "server-pub-sub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:pub": "node -r dotenv/config main-publish",
+    "start:sub": "node -r dotenv/config main-subscribe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0",
+    "redis": "^4.5.0",
+    "ws": "^8.11.0"
+  }
+}
