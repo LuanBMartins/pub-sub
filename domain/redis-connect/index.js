@@ -13,7 +13,7 @@ async function publish(channel, value) {
 }
 
 async function subscribe(channelSubscribed, callback) {
-    client.subscribe(channelSubscribed, (message, channel) => {
+    client.pSubscribe(channelSubscribed, (message, channel) => {
         callback(message);
     });
 }

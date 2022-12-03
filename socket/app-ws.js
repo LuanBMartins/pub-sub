@@ -6,6 +6,9 @@ function onError(ws, err) {
 }
 
 function onMessage(ws, data) {
+    console.log(`🚀 ~ file: app-ws.js:9 ~ onMessage ~ data ${data}`)
+    
+    
     subscribe(`${data}`, ws)
     ws.send(`recebido!`);
 }
